@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  localstack:
+    image: localstack/localstack:latest
+    ports:
+      - "4566:4566" # Gateway
+      - "4571:4571" # Lambda
+    environment:
+      - DEBUG=1
+      - LOCALSTACK_API_KEY=your_api_key # Optional for Pro
+      - SERVICES=s3,sqs
+    volumes:
+      - "./localstack_data:/var/lib/localstack"

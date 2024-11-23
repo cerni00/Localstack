@@ -1,0 +1,10 @@
+Listing S3 buckets:
+2024-11-23 13:19:14 example-bucket
+Listing SQS queues:
+{
+    "QueueUrls": [
+        "http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/example-queue"
+    ]
+}
+Uploading a test file to S3:
+Completed 18 Bytes/18 Bytes (398 Bytes/s) with 1 file(s) remainingupload: .\test_file.txt to s3://example-bucket/test_file.txt      
